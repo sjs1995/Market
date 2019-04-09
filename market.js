@@ -6,7 +6,6 @@ new Vue({
                     {name : "orange",num : 3, price : 30.0},
                     {name: "banana", num: 4, price: 40.0 }
                     ]
-        ,collect_list: []
     }
     ,computed:{
         count : function(){
@@ -25,7 +24,7 @@ new Vue({
         }
     }
     ,methods: {
-        changeNumber: function (goods, _$event) {
+        changeNumber: function (goods, $event) {
             var obj = $(event.target);
             goods.num = parseInt(obj.val());
         },
